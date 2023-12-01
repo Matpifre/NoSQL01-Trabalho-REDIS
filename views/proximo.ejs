@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    Sistema 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua senha é:</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+    </style>
+    <script>
+        function voltar() {
+            window.location.href = "/";
+        }
+    </script>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <div style= "flex: 10;font-size: 50px;width: 200px; text-align: center; margin: auto;">
+        Senha chamada:
+        <%= senhaAtual %>
+        <button style="padding: 15px;" onclick="voltar()">Voltar</button>
+    </div>
+</body>
+</html>
